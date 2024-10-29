@@ -116,12 +116,16 @@ export default Kapsule({
     // Create scene
     const scene = document.createElement('a-scene');
     scene.setAttribute('embedded', '');
+
+    scene.setAttribute("webxr", "optionalFeatures: local-floor, hand-tracking; requiredFeatures: bounded-floor; referenceSpaceType: bounded-floor;")
+		scene.setAttribute("xr-mode-ui", "enterAREnabled: true");
     //scene.setAttribute('stats', null);
 
     scene.appendChild(state.sky = document.createElement('a-sky'));
     state.sky.setAttribute('radius', 3000);
 
     // Add camera
+    /*
     let cameraG;
     scene.appendChild(cameraG = document.createElement('a-entity'));
     cameraG.setAttribute('position', '0 0 300');
@@ -133,6 +137,7 @@ export default Kapsule({
     camera.setAttribute('position', '0 0 0');
     camera.setAttribute('look-controls', 'pointerLockEnabled: false');
     camera.setAttribute('wasd-controls', 'fly: true; acceleration: 700');
+    */
 
 
     // display cursor in middle of screen
