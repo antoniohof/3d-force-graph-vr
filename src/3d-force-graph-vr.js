@@ -101,7 +101,7 @@ export default Kapsule({
   init(domNode, state) {
     // Wipe DOM
     domNode.innerHTML = '';
-
+    console.log("test works")
     state.container = document.createElement('div');
     domNode.appendChild(state.container);
     state.container.style.position = 'relative';

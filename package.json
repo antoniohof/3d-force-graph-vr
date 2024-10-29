@@ -43,7 +43,7 @@
   ],
   "dependencies": {
     "accessor-fn": "1",
-    "aframe": "^1.5",
+    "aframe": "^1.6",
     "aframe-extras": "^7.2",
     "aframe-forcegraph-component": "3",
     "kapsule": "1",
