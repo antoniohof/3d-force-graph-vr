@@ -109,16 +109,18 @@ export default Kapsule({
     state.container.style.height = `${state.height}px`;
 
     // Add nav info section
+    /*
     state.container.appendChild(state.navInfo = document.createElement('div'));
     state.navInfo.className = 'graph-nav-info';
     state.navInfo.textContent = 'Mouse drag: look, gamepad/arrow/wasd keys: move';
+    */
 
     // Create scene
     const scene = document.createElement('a-scene');
     scene.setAttribute('embedded', '');
 
-    scene.setAttribute("webxr", "optionalFeatures: local-floor, hand-tracking; requiredFeatures: bounded-floor; referenceSpaceType: bounded-floor;")
-		scene.setAttribute("xr-mode-ui", "enterAREnabled: true");
+    scene.setAttribute("webxr", "optionalFeatures: bounded-floor hand-tracking; requiredFeatures: local-floor; referenceSpaceType: local-floor;")
+		//scene.setAttribute("xr-mode-ui", "XRMode: ar ;enterAREnabled: true");
     //scene.setAttribute('stats', null);
 
     scene.appendChild(state.sky = document.createElement('a-sky'));
