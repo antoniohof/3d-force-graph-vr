@@ -148,6 +148,7 @@ export default Kapsule({
     // cursor.setAttribute('raycaster', 'objects: ----none----'); // disable cursor raycaster
 
     // Setup tooltip
+    /*
     let tooltipEl;
     camera.appendChild(tooltipEl = document.createElement('a-text'));
     tooltipEl.setAttribute('position', '0 -0.3 -1');
@@ -180,6 +181,7 @@ export default Kapsule({
       laser.setAttribute('raycaster', 'objects: [forcegraph]; interval: 100; lineColor: steelblue; lineOpacity: 0.85');
       state.raycasterEls.push(laser);
     });
+    */
 
     // Add forcegraph entity
     scene.appendChild(state.forcegraph = document.createElement('a-entity'));
